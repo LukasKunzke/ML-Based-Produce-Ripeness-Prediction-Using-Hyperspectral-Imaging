@@ -135,8 +135,8 @@ Using an optimized approach, I implemented a pipeline that:
   - `np.mean(np.abs(two_d_slice - np.mean(two_d_slice)))`
   - `scipy.stats.skew(two_d_slice.flatten())`
   - `scipy.stats.kurtosis(two_d_slice.flatten())`
-- Reducing the number of components with PCA and standardizing the statistics.  
-
+- Reducing the number of components with PCA and standardizing the remaining statistics.  
+- Eliminating further features with backwards elimination.
 
 
 
